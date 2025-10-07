@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mahal Sorry.</title>
+
+<style>
+  body {
+    background: linear-gradient(to bottom right, #ffe6e6, #fff0f0);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding-top: 100px;
+    transition: background 1s;
+  }
+
+  body:hover {
+    background: linear-gradient(to bottom right, #fff0f5, #ffe6f2);
+  }
+
+  .nike-p {
+    font-size: 30px;
+    font-weight: bold;
+    color: #e60073;
+    animation: heartbeat 1.5s infinite;
+  }
+
+  @keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+  }
+
+  .sub-p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 30px;
+  }
+
+  .add-p, .buy-p {
+    font-weight: bold;
+    font-size: 14px;
+    height: 45px;
+    width: 120px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    transition: all 0.4s ease;
+  }
+
+  .add-p {
+    background-color: rgb(255,216,20);
+  }
+
+  .add-p:hover {
+    background-color: rgb(237, 204, 36);
+    transform: scale(1.2);
+    box-shadow: 0 5px 10px rgba(255, 174, 0, 0.3);
+  }
+
+  .buy-p {
+    background-color: rgb(255,164,28);
+  }
+
+  .buy-p:hover {
+    background-color: rgb(236, 116, 18);
+    transform: rotate(5deg) scale(1.1);
+    box-shadow: 0 5px 10px rgba(236, 116, 18, 0.3);
+  }
+
+  .addt-a, .buyt-a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .addt-a:hover, .buyt-a:hover {
+    text-decoration: none;
+  }
+
+  .emoji {
+    font-size: 40px;
+    animation: float 3s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  .message {
+    font-size: 16px;
+    color: #444;
+    margin-top: 20px;
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+
+  .add-p:hover + .message {
+    opacity: 1;
+  }
+</style>
+</head>
+
+<body>
+  <p class="nike-p">Mahal, Sorry ❤️</p>
+  <p class="sub-p">Bati na tayo? 🥺</p>
+  <div class="emoji">💖 💫 💞</div>
+
+  <button class="add-p"> 
+    <a class="addt-a" href="https://www.youtube.com/watch?v=2MTM5F4k1AE" target="_blank">
+      Yes 😘
+    </a>
+  </button>
+
+  <button class="buy-p"> 
+    <a class="buyt-a" href="https://www.facebook.com/christian.cabanlit.5" target="_blank">
+      No 😢
+    </a>
+  </button>
+
+  <p class="message">Aww, I knew you'd say yes 😍💗</p>
+</body>
+</html>
